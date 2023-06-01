@@ -22,8 +22,8 @@ const {RestaurantModel} = require('./restaurant.model.js')
 // }
   
 const ordersschema = mongoose.Schema({
-    user : { type: mongoose.SchemaTypes.ObjectId, ref: UserModel },
-    restaurant : { type: mongoose.SchemaTypes.ObjectId, ref:RestaurantModel },
+    user : { type: String},
+    restaurant : {type: String },
   items: [{
     name: String,
     price: Number,
